@@ -2,7 +2,7 @@
 
 A deep learning-based sign language recognition system that detects and classifies hand signs from video input using MediaPipe keypoints and CNN-LSTM neural networks.
 
-**Author:** [Sk Rashed Bin Mohammad](https://github.com/rashed2940) · rashed2940@gmail.com
+**Author:** [Sk Rashed Bin Mohammad](https://github.com/rashed2940)
 
 ## Overview
 
@@ -422,7 +422,6 @@ For issues, questions, or suggestions:
 
 - **Author:** Sk Rashed Bin Mohammad
 - **GitHub:** [@rashed2940](https://github.com/rashed2940)
-- **Email:** rashed2940@gmail.com
 
 ---
 
