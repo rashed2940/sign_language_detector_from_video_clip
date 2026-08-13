@@ -108,6 +108,54 @@ Sign_language_detection/
 └── .gitignore                                # Git ignore patterns
 ```
 
+## Dataset
+
+This project uses a curated 10-class subset derived from the **WLASL (Word-Level American Sign Language)** dataset, the largest publicly available video dataset for word-level ASL recognition.
+
+### Source Dataset
+
+| Property | Value |
+|----------|-------|
+| **Name** | WLASL — Word-Level American Sign Language |
+| **Source** | [Kaggle: Sign Language Dataset (WLASL Videos)](https://www.kaggle.com/datasets/waseemnagahhenes/sign-language-dataset-wlasl-videos) |
+| **Original Size** | ~12,000 videos across 2,000 ASL words |
+| **Full Dataset** | [Official WLASL repository](https://github.com/dxli94/WLASL) |
+| **Use Case** | Word-level action recognition, sign language translation research |
+| **License** | As specified by WLASL authors (Dongxu Li & Hongdong Li) |
+
+### Our 10-Class Subset
+
+From the 2,000-word WLASL corpus, this project selects **10 word classes** for focused experimentation:
+
+| # | Class | Description |
+|---|-------|-------------|
+| 1 | abdomen | Sign for "abdomen" |
+| 2 | above | Sign for "above" |
+| 3 | bug | Sign for "bug" |
+| 4 | complete | Sign for "complete" |
+| 5 | mad | Sign for "mad" |
+| 6 | old | Sign for "old" |
+| 7 | illegal | Sign for "illegal" |
+| 8 | dismiss | Sign for "dismiss" |
+| 9 | enough | Sign for "enough" |
+| 10 | hurry | Sign for "hurry" |
+
+### Acknowledgments
+
+> **WLASL** is the largest video dataset for Word-Level American Sign Language (ASL) recognition, featuring 2,000 common different words in ASL. We hope WLASL will facilitate research in sign language understanding and eventually benefit the communication between deaf and hearing communities.
+>
+> **Original Authors:** Dongxu Li and Hongdong Li
+> **Please cite the WLASL paper and visit the official website and repository when using this dataset.**
+
+```bibtex
+@inproceedings{li2020wlasl,
+  title={Word-Level Deep Sign Language Recognition from Video: A New Large-Scale Dataset and Methods Comparison},
+  author={Li, Dongxu and Rodriguez, Cristian and Yu, Xin and Li, Hongdong},
+  booktitle={The IEEE Winter Conference on Applications of Computer Vision},
+  year={2020}
+}
+```
+
 ## Inference Pipeline
 
 The sign detection pipeline follows this exact sequence:
