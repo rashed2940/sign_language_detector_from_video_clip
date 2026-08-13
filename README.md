@@ -2,6 +2,8 @@
 
 A deep learning-based sign language recognition system that detects and classifies hand signs from video input using MediaPipe keypoints and CNN-LSTM neural networks.
 
+**Author:** [Sk Rashed Bin Mohammad](https://github.com/rashed2940) · rashed2940@gmail.com
+
 ## Overview
 
 This project implements an end-to-end sign language detection pipeline:
@@ -394,9 +396,9 @@ If you use this project in your research, please cite:
 ```bibtex
 @software{sign_language_detection_2024,
   title={Sign Language Detection: Deep Learning-based Recognition System},
-  author={Your Name},
+  author={Sk Rashed Bin Mohammad},
   year={2024},
-  url={https://github.com/your-username/Sign_language_detection}
+  url={https://github.com/rashed2940/sign_language_detector_from_video_clip}
 }
 ```
 
@@ -416,7 +418,14 @@ For issues, questions, or suggestions:
 - Check existing issues for similar problems
 - Provide error messages and system details
 
+## Contact
+
+- **Author:** Sk Rashed Bin Mohammad
+- **GitHub:** [@rashed2940](https://github.com/rashed2940)
+- **Email:** rashed2940@gmail.com
+
 ---
 
 **Last Updated**: August 2024  
-**Version**: 1.0.0
+**Version**: 1.0.0  
+**Author:** Sk Rashed Bin Mohammad
