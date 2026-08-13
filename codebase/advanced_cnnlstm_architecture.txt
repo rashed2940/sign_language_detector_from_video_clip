@@ -1,0 +1,53 @@
+============================================================
+Advanced_CNNLSTM Architecture
+============================================================
+
+AdaptiveAdvancedCNNLSTM(
+  (feature_extractor): Sequential(
+    (0): Linear(in_features=219, out_features=192, bias=True)
+    (1): BatchNorm1d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.13999999999999999, inplace=False)
+    (4): Linear(in_features=192, out_features=144, bias=True)
+    (5): BatchNorm1d(144, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (6): ReLU()
+    (7): Dropout(p=0.16799999999999998, inplace=False)
+    (8): Linear(in_features=144, out_features=96, bias=True)
+    (9): BatchNorm1d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (10): ReLU()
+    (11): Dropout(p=0.19599999999999998, inplace=False)
+  )
+  (lstm): LSTM(96, 192, num_layers=2, batch_first=True, dropout=0.13999999999999999, bidirectional=True)
+  (attention): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=384, out_features=384, bias=True)
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=384, out_features=192, bias=True)
+    (1): BatchNorm1d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.22399999999999998, inplace=False)
+    (4): Linear(in_features=192, out_features=10, bias=True)
+  )
+)
+
+
+============================================================
+Total Parameters: 2,085,658
+Trainable Parameters: 2,085,658
+Non-trainable Parameters: 0
+============================================================
+
+
+Layer-wise Parameter Count:
+----------------------------------------
+feature_extractor.0: 42,240 parameters
+feature_extractor.1: 384 parameters
+feature_extractor.4: 27,792 parameters
+feature_extractor.5: 288 parameters
+feature_extractor.8: 13,920 parameters
+feature_extractor.9: 192 parameters
+lstm: 1,333,248 parameters
+attention.out_proj: 147,840 parameters
+classifier.0: 73,920 parameters
+classifier.1: 384 parameters
+classifier.4: 1,930 parameters

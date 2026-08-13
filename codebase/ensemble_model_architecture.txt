@@ -1,0 +1,101 @@
+============================================================
+Ensemble_Model Architecture
+============================================================
+
+AdaptiveEnsembleModel(
+  (model1): AdaptiveImprovedCNNLSTM(
+    (feature_layers): Sequential(
+      (0): Linear(in_features=138, out_features=224, bias=True)
+      (1): BatchNorm1d(224, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Dropout(p=0.30000000000000004, inplace=False)
+      (4): Linear(in_features=224, out_features=168, bias=True)
+      (5): BatchNorm1d(168, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (6): ReLU()
+      (7): Dropout(p=0.375, inplace=False)
+      (8): Linear(in_features=168, out_features=112, bias=True)
+      (9): BatchNorm1d(112, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (10): ReLU()
+      (11): Dropout(p=0.22499999999999998, inplace=False)
+    )
+    (lstm): LSTM(112, 280, num_layers=2, batch_first=True, dropout=0.375)
+    (classifier): Sequential(
+      (0): Linear(in_features=280, out_features=168, bias=True)
+      (1): BatchNorm1d(168, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Dropout(p=0.44999999999999996, inplace=False)
+      (4): Linear(in_features=168, out_features=84, bias=True)
+      (5): ReLU()
+      (6): Dropout(p=0.375, inplace=False)
+      (7): Linear(in_features=84, out_features=10, bias=True)
+    )
+  )
+  (model2): AdaptiveAdvancedCNNLSTM(
+    (feature_extractor): Sequential(
+      (0): Linear(in_features=219, out_features=192, bias=True)
+      (1): BatchNorm1d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Dropout(p=0.13999999999999999, inplace=False)
+      (4): Linear(in_features=192, out_features=144, bias=True)
+      (5): BatchNorm1d(144, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (6): ReLU()
+      (7): Dropout(p=0.16799999999999998, inplace=False)
+      (8): Linear(in_features=144, out_features=96, bias=True)
+      (9): BatchNorm1d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (10): ReLU()
+      (11): Dropout(p=0.19599999999999998, inplace=False)
+    )
+    (lstm): LSTM(96, 192, num_layers=2, batch_first=True, dropout=0.13999999999999999, bidirectional=True)
+    (attention): MultiheadAttention(
+      (out_proj): NonDynamicallyQuantizableLinear(in_features=384, out_features=384, bias=True)
+    )
+    (classifier): Sequential(
+      (0): Linear(in_features=384, out_features=192, bias=True)
+      (1): BatchNorm1d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Dropout(p=0.22399999999999998, inplace=False)
+      (4): Linear(in_features=192, out_features=10, bias=True)
+    )
+  )
+  (meta_learner): Sequential(
+    (0): Linear(in_features=20, out_features=32, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=32, out_features=2, bias=True)
+    (3): Softmax(dim=1)
+  )
+)
+
+
+============================================================
+Total Parameters: 3,308,580
+Trainable Parameters: 3,308,580
+Non-trainable Parameters: 0
+============================================================
+
+
+Layer-wise Parameter Count:
+----------------------------------------
+model1.feature_layers.0: 31,136 parameters
+model1.feature_layers.1: 448 parameters
+model1.feature_layers.4: 37,800 parameters
+model1.feature_layers.5: 336 parameters
+model1.feature_layers.8: 18,928 parameters
+model1.feature_layers.9: 224 parameters
+model1.lstm: 1,070,720 parameters
+model1.classifier.0: 47,208 parameters
+model1.classifier.1: 336 parameters
+model1.classifier.4: 14,196 parameters
+model1.classifier.7: 850 parameters
+model2.feature_extractor.0: 42,240 parameters
+model2.feature_extractor.1: 384 parameters
+model2.feature_extractor.4: 27,792 parameters
+model2.feature_extractor.5: 288 parameters
+model2.feature_extractor.8: 13,920 parameters
+model2.feature_extractor.9: 192 parameters
+model2.lstm: 1,333,248 parameters
+model2.attention.out_proj: 147,840 parameters
+model2.classifier.0: 73,920 parameters
+model2.classifier.1: 384 parameters
+model2.classifier.4: 1,930 parameters
+meta_learner.0: 672 parameters
+meta_learner.2: 66 parameters

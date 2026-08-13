@@ -1,0 +1,14 @@
+,precision,recall,f1-score,support
+abdomen,1.0,1.0,1.0,4.0
+above,1.0,1.0,1.0,4.0
+bug,1.0,1.0,1.0,4.0
+complete,1.0,1.0,1.0,4.0
+mad,1.0,1.0,1.0,4.0
+old,1.0,1.0,1.0,4.0
+illegal,1.0,1.0,1.0,4.0
+dismiss,1.0,1.0,1.0,4.0
+enough,1.0,1.0,1.0,4.0
+hurry,1.0,1.0,1.0,4.0
+accuracy,1.0,1.0,1.0,1.0
+macro avg,1.0,1.0,1.0,40.0
+weighted avg,1.0,1.0,1.0,40.0

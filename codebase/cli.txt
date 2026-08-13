@@ -1,0 +1,2001 @@
+
+============================================================
+SYSTEM INFORMATION
+============================================================
+✓ CUDA is available!
+  PyTorch version: 2.8.0+cu128
+  CUDA version: 12.8
+  Number of GPUs: 4
+
+  GPU 0: NVIDIA L40
+  - Total Memory: 47.68 GB
+  - CUDA Capability: 8.9
+  - Multiprocessors: 142
+
+  GPU 1: NVIDIA L40
+  - Total Memory: 47.68 GB
+  - CUDA Capability: 8.9
+  - Multiprocessors: 142
+
+  GPU 2: NVIDIA L40
+  - Total Memory: 47.68 GB
+  - CUDA Capability: 8.9
+  - Multiprocessors: 142
+
+  GPU 3: NVIDIA L40
+  - Total Memory: 47.68 GB
+  - CUDA Capability: 8.9
+  - Multiprocessors: 142
+============================================================
+
+============================================================
+TRAINING ALL MODELS WITH ADAPTIVE STRATEGIES
+Target classes: 10
+============================================================
+
+1. Training Improved CNN-LSTM Model...
+
+============================================================
+Training IMPROVED model
+============================================================
+  Using GPU: NVIDIA L40
+   GPU Memory: 47.68 GB
+   CUDA Version: 12.8
+============================================================
+Adaptive parameters for 10 classes:
+  Learning rate: 0.000600
+  Epochs: 75
+  Batch size: 4
+  Patience: 25
+Loading samples with adaptive strategy...
+  Warning: abdomen has only 5 samples, duplicating to reach 20
+  Warning: above has only 5 samples, duplicating to reach 20
+  Warning: bug has only 5 samples, duplicating to reach 20
+  Warning: complete has only 5 samples, duplicating to reach 20
+  Warning: mad has only 6 samples, duplicating to reach 20
+  Warning: old has only 7 samples, duplicating to reach 20
+  Warning: illegal has only 6 samples, duplicating to reach 20
+  Warning: dismiss has only 6 samples, duplicating to reach 20
+  Warning: enough has only 5 samples, duplicating to reach 20
+  Warning: hurry has only 7 samples, duplicating to reach 20
+
+Dataset (improved) - train:
+  Classes: 10
+  Total samples: 160
+  Min samples per class: 20
+  Max samples per class: 60
+  Class distribution:
+    abdomen: 16 samples
+    above: 16 samples
+    bug: 16 samples
+    complete: 16 samples
+    mad: 16 samples
+    old: 16 samples
+    illegal: 16 samples
+    dismiss: 16 samples
+    enough: 16 samples
+    hurry: 16 samples
+Loading samples with adaptive strategy...
+  Warning: abdomen has only 5 samples, duplicating to reach 20
+  Warning: above has only 5 samples, duplicating to reach 20
+  Warning: bug has only 5 samples, duplicating to reach 20
+  Warning: complete has only 5 samples, duplicating to reach 20
+  Warning: mad has only 6 samples, duplicating to reach 20
+  Warning: old has only 7 samples, duplicating to reach 20
+  Warning: illegal has only 6 samples, duplicating to reach 20
+  Warning: dismiss has only 6 samples, duplicating to reach 20
+  Warning: enough has only 5 samples, duplicating to reach 20
+  Warning: hurry has only 7 samples, duplicating to reach 20
+
+Dataset (improved) - val:
+  Classes: 10
+  Total samples: 40
+  Min samples per class: 20
+  Max samples per class: 60
+  Class distribution:
+    abdomen: 4 samples
+    above: 4 samples
+    bug: 4 samples
+    complete: 4 samples
+    mad: 4 samples
+    old: 4 samples
+    illegal: 4 samples
+    dismiss: 4 samples
+    enough: 4 samples
+    hurry: 4 samples
+
+Model parameters:
+  Total: 1,222,182
+  Trainable: 1,222,182
+Model architecture saved to op/10c_AM//improved_cnnlstm_architecture.png
+
+Epoch 1/75
+Train Loss: 5.5157 | Acc: 8.75%
+Val Loss: 2.2689 | Acc: 15.00% | F1: 0.158
+Accuracy Gap: 6.25%
+Learning Rate: 0.000600
+✓ New best model saved! (Higher training accuracy)
+  Train: 8.75% | Val: 15.00% | Gap: 6.25%
+--------------------------------------------------
+
+Epoch 2/75
+Train Loss: 5.2106 | Acc: 19.38%
+Val Loss: 2.1962 | Acc: 15.00% | F1: 0.145
+Accuracy Gap: 4.38%
+Learning Rate: 0.000600
+✓ New best model saved! (Higher training accuracy)
+  Train: 19.38% | Val: 15.00% | Gap: 4.38%
+--------------------------------------------------
+
+Epoch 3/75
+Train Loss: 5.1304 | Acc: 14.37%
+Val Loss: 2.0795 | Acc: 27.50% | F1: 0.189
+Accuracy Gap: 13.13%
+Learning Rate: 0.000600
+⚠ Accuracy gap too large: 13.13% > 10% - Model not saved
+--------------------------------------------------
+
+Epoch 4/75
+Train Loss: 4.8913 | Acc: 16.25%
+Val Loss: 2.2197 | Acc: 15.00% | F1: 0.072
+Accuracy Gap: 1.25%
+Learning Rate: 0.000600
+--------------------------------------------------
+
+Epoch 5/75
+Train Loss: 4.7001 | Acc: 21.25%
+Val Loss: 1.8721 | Acc: 27.50% | F1: 0.172
+Accuracy Gap: 6.25%
+Learning Rate: 0.000600
+✓ New best model saved! (Higher training accuracy)
+  Train: 21.25% | Val: 27.50% | Gap: 6.25%
+--------------------------------------------------
+
+Epoch 6/75
+Train Loss: 4.6637 | Acc: 19.38%
+Val Loss: 1.9164 | Acc: 27.50% | F1: 0.186
+Accuracy Gap: 8.13%
+Learning Rate: 0.000600
+--------------------------------------------------
+
+Epoch 7/75
+Train Loss: 4.5276 | Acc: 23.75%
+Val Loss: 1.9045 | Acc: 22.50% | F1: 0.177
+Accuracy Gap: 1.25%
+Learning Rate: 0.000600
+✓ New best model saved! (Higher training accuracy)
+  Train: 23.75% | Val: 22.50% | Gap: 1.25%
+--------------------------------------------------
+
+Epoch 8/75
+Train Loss: 4.3468 | Acc: 28.75%
+Val Loss: 1.8780 | Acc: 22.50% | F1: 0.139
+Accuracy Gap: 6.25%
+Learning Rate: 0.000600
+✓ New best model saved! (Higher training accuracy)
+  Train: 28.75% | Val: 22.50% | Gap: 6.25%
+--------------------------------------------------
+
+Epoch 9/75
+Train Loss: 4.3760 | Acc: 25.00%
+Val Loss: 1.6831 | Acc: 37.50% | F1: 0.306
+Accuracy Gap: 12.50%
+Learning Rate: 0.000600
+⚠ Accuracy gap too large: 12.50% > 10% - Model not saved
+--------------------------------------------------
+
+Epoch 10/75
+Train Loss: 4.1659 | Acc: 28.75%
+Val Loss: 1.6191 | Acc: 40.00% | F1: 0.316
+Accuracy Gap: 11.25%
+Learning Rate: 0.000600
+⚠ Accuracy gap too large: 11.25% > 10% - Model not saved
+--------------------------------------------------
+
+Epoch 11/75
+Train Loss: 4.1095 | Acc: 28.75%
+Val Loss: 1.6137 | Acc: 35.00% | F1: 0.297
+Accuracy Gap: 6.25%
+Learning Rate: 0.000600
+--------------------------------------------------
+
+Epoch 12/75
+Train Loss: 3.9029 | Acc: 33.75%
+Val Loss: 1.5285 | Acc: 35.00% | F1: 0.235
+Accuracy Gap: 1.25%
+Learning Rate: 0.000600
+✓ New best model saved! (Higher training accuracy)
+  Train: 33.75% | Val: 35.00% | Gap: 1.25%
+--------------------------------------------------
+
+Epoch 13/75
+Train Loss: 3.7745 | Acc: 35.00%
+Val Loss: 1.4532 | Acc: 42.50% | F1: 0.360
+Accuracy Gap: 7.50%
+Learning Rate: 0.000600
+✓ New best model saved! (Higher training accuracy)
+  Train: 35.00% | Val: 42.50% | Gap: 7.50%
+--------------------------------------------------
+
+Epoch 14/75
+Train Loss: 3.8290 | Acc: 33.75%
+Val Loss: 1.4841 | Acc: 45.00% | F1: 0.374
+Accuracy Gap: 11.25%
+Learning Rate: 0.000600
+⚠ Accuracy gap too large: 11.25% > 10% - Model not saved
+--------------------------------------------------
+
+Epoch 15/75
+Train Loss: 3.7466 | Acc: 33.12%
+Val Loss: 1.8802 | Acc: 30.00% | F1: 0.170
+Accuracy Gap: 3.12%
+Learning Rate: 0.000600
+--------------------------------------------------
+
+Epoch 16/75
+Train Loss: 3.7221 | Acc: 34.38%
+Val Loss: 1.4011 | Acc: 47.50% | F1: 0.413
+Accuracy Gap: 13.12%
+Learning Rate: 0.000600
+⚠ Accuracy gap too large: 13.12% > 10% - Model not saved
+--------------------------------------------------
+
+Epoch 17/75
+Train Loss: 3.4687 | Acc: 38.75%
+Val Loss: 1.2383 | Acc: 47.50% | F1: 0.353
+Accuracy Gap: 8.75%
+Learning Rate: 0.000600
+✓ New best model saved! (Higher training accuracy)
+  Train: 38.75% | Val: 47.50% | Gap: 8.75%
+--------------------------------------------------
+
+Epoch 18/75
+Train Loss: 3.5369 | Acc: 39.38%
+Val Loss: 1.3769 | Acc: 42.50% | F1: 0.301
+Accuracy Gap: 3.12%
+Learning Rate: 0.000600
+✓ New best model saved! (Higher training accuracy)
+  Train: 39.38% | Val: 42.50% | Gap: 3.12%
+--------------------------------------------------
+
+Epoch 19/75
+Train Loss: 3.3366 | Acc: 40.62%
+Val Loss: 1.1546 | Acc: 47.50% | F1: 0.385
+Accuracy Gap: 6.87%
+Learning Rate: 0.000600
+✓ New best model saved! (Higher training accuracy)
+  Train: 40.62% | Val: 47.50% | Gap: 6.87%
+--------------------------------------------------
+
+Epoch 20/75
+Train Loss: 3.3673 | Acc: 45.62%
+Val Loss: 1.3311 | Acc: 55.00% | F1: 0.424
+Accuracy Gap: 9.38%
+Learning Rate: 0.000600
+✓ New best model saved! (Higher training accuracy)
+  Train: 45.62% | Val: 55.00% | Gap: 9.38%
+--------------------------------------------------
+
+Epoch 21/75
+Train Loss: 3.3110 | Acc: 43.75%
+Val Loss: 1.0365 | Acc: 52.50% | F1: 0.508
+Accuracy Gap: 8.75%
+Learning Rate: 0.000600
+--------------------------------------------------
+
+Epoch 22/75
+Train Loss: 3.1268 | Acc: 50.00%
+Val Loss: 1.0750 | Acc: 47.50% | F1: 0.393
+Accuracy Gap: 2.50%
+Learning Rate: 0.000600
+✓ New best model saved! (Higher training accuracy)
+  Train: 50.00% | Val: 47.50% | Gap: 2.50%
+--------------------------------------------------
+
+Epoch 23/75
+Train Loss: 3.1108 | Acc: 46.88%
+Val Loss: 1.4905 | Acc: 55.00% | F1: 0.439
+Accuracy Gap: 8.13%
+Learning Rate: 0.000600
+--------------------------------------------------
+
+Epoch 24/75
+Train Loss: 3.2614 | Acc: 40.00%
+Val Loss: 1.1529 | Acc: 42.50% | F1: 0.333
+Accuracy Gap: 2.50%
+Learning Rate: 0.000600
+--------------------------------------------------
+
+Epoch 25/75
+Train Loss: 3.0306 | Acc: 51.25%
+Val Loss: 0.9175 | Acc: 60.00% | F1: 0.536
+Accuracy Gap: 8.75%
+Learning Rate: 0.000600
+✓ New best model saved! (Higher training accuracy)
+  Train: 51.25% | Val: 60.00% | Gap: 8.75%
+--------------------------------------------------
+
+Epoch 26/75
+Train Loss: 2.9986 | Acc: 52.50%
+Val Loss: 1.0253 | Acc: 55.00% | F1: 0.489
+Accuracy Gap: 2.50%
+Learning Rate: 0.000600
+✓ New best model saved! (Higher training accuracy)
+  Train: 52.50% | Val: 55.00% | Gap: 2.50%
+--------------------------------------------------
+
+Epoch 27/75
+Train Loss: 3.0823 | Acc: 47.50%
+Val Loss: 1.2424 | Acc: 50.00% | F1: 0.416
+Accuracy Gap: 2.50%
+Learning Rate: 0.000600
+--------------------------------------------------
+
+Epoch 28/75
+Train Loss: 2.9851 | Acc: 47.50%
+Val Loss: 1.0754 | Acc: 45.00% | F1: 0.355
+Accuracy Gap: 2.50%
+Learning Rate: 0.000600
+--------------------------------------------------
+
+Epoch 29/75
+Train Loss: 2.9434 | Acc: 50.62%
+Val Loss: 0.8770 | Acc: 52.50% | F1: 0.481
+Accuracy Gap: 1.88%
+Learning Rate: 0.000600
+--------------------------------------------------
+
+Epoch 30/75
+Train Loss: 2.7642 | Acc: 56.25%
+Val Loss: 0.9050 | Acc: 52.50% | F1: 0.468
+Accuracy Gap: 3.75%
+Learning Rate: 0.000600
+✓ New best model saved! (Higher training accuracy)
+  Train: 56.25% | Val: 52.50% | Gap: 3.75%
+--------------------------------------------------
+
+Epoch 31/75
+Train Loss: 2.7430 | Acc: 55.62%
+Val Loss: 0.6675 | Acc: 67.50% | F1: 0.616
+Accuracy Gap: 11.88%
+Learning Rate: 0.000600
+⚠ Accuracy gap too large: 11.88% > 10% - Model not saved
+--------------------------------------------------
+
+Epoch 32/75
+Train Loss: 2.9979 | Acc: 49.38%
+Val Loss: 0.9538 | Acc: 47.50% | F1: 0.435
+Accuracy Gap: 1.88%
+Learning Rate: 0.000600
+--------------------------------------------------
+
+Epoch 33/75
+Train Loss: 2.7526 | Acc: 55.00%
+Val Loss: 0.9202 | Acc: 65.00% | F1: 0.602
+Accuracy Gap: 10.00%
+Learning Rate: 0.000600
+--------------------------------------------------
+
+Epoch 34/75
+Train Loss: 2.7824 | Acc: 55.62%
+Val Loss: 1.1244 | Acc: 52.50% | F1: 0.502
+Accuracy Gap: 3.12%
+Learning Rate: 0.000600
+--------------------------------------------------
+
+Epoch 35/75
+Train Loss: 2.6911 | Acc: 52.50%
+Val Loss: 0.8648 | Acc: 55.00% | F1: 0.482
+Accuracy Gap: 2.50%
+Learning Rate: 0.000600
+--------------------------------------------------
+
+Epoch 36/75
+Train Loss: 2.8082 | Acc: 56.25%
+Val Loss: 0.7606 | Acc: 62.50% | F1: 0.572
+Accuracy Gap: 6.25%
+Learning Rate: 0.000600
+--------------------------------------------------
+
+Epoch 37/75
+Train Loss: 2.6444 | Acc: 61.88%
+Val Loss: 0.7393 | Acc: 67.50% | F1: 0.614
+Accuracy Gap: 5.63%
+Learning Rate: 0.000600
+✓ New best model saved! (Higher training accuracy)
+  Train: 61.88% | Val: 67.50% | Gap: 5.63%
+--------------------------------------------------
+
+Epoch 38/75
+Train Loss: 2.6337 | Acc: 61.25%
+Val Loss: 0.8251 | Acc: 65.00% | F1: 0.547
+Accuracy Gap: 3.75%
+Learning Rate: 0.000600
+--------------------------------------------------
+
+Epoch 39/75
+Train Loss: 2.7970 | Acc: 53.75%
+Val Loss: 0.7083 | Acc: 62.50% | F1: 0.554
+Accuracy Gap: 8.75%
+Learning Rate: 0.000600
+--------------------------------------------------
+
+Epoch 40/75
+Train Loss: 2.6007 | Acc: 56.88%
+Val Loss: 0.7694 | Acc: 57.50% | F1: 0.495
+Accuracy Gap: 0.62%
+Learning Rate: 0.000420
+--------------------------------------------------
+
+Epoch 41/75
+Train Loss: 2.4568 | Acc: 63.12%
+Val Loss: 0.5476 | Acc: 70.00% | F1: 0.652
+Accuracy Gap: 6.87%
+Learning Rate: 0.000420
+✓ New best model saved! (Higher training accuracy)
+  Train: 63.12% | Val: 70.00% | Gap: 6.87%
+--------------------------------------------------
+
+Epoch 42/75
+Train Loss: 2.2241 | Acc: 68.12%
+Val Loss: 0.6874 | Acc: 60.00% | F1: 0.519
+Accuracy Gap: 8.13%
+Learning Rate: 0.000420
+✓ New best model saved! (Higher training accuracy)
+  Train: 68.12% | Val: 60.00% | Gap: 8.13%
+--------------------------------------------------
+
+Epoch 43/75
+Train Loss: 2.3882 | Acc: 60.62%
+Val Loss: 0.6330 | Acc: 72.50% | F1: 0.685
+Accuracy Gap: 11.88%
+Learning Rate: 0.000420
+⚠ Accuracy gap too large: 11.88% > 10% - Model not saved
+--------------------------------------------------
+
+Epoch 44/75
+Train Loss: 2.3808 | Acc: 63.75%
+Val Loss: 0.5350 | Acc: 72.50% | F1: 0.715
+Accuracy Gap: 8.75%
+Learning Rate: 0.000420
+--------------------------------------------------
+
+Epoch 45/75
+Train Loss: 2.1743 | Acc: 67.50%
+Val Loss: 0.4792 | Acc: 72.50% | F1: 0.699
+Accuracy Gap: 5.00%
+Learning Rate: 0.000420
+--------------------------------------------------
+
+Epoch 46/75
+Train Loss: 2.2080 | Acc: 70.00%
+Val Loss: 0.6711 | Acc: 65.00% | F1: 0.615
+Accuracy Gap: 5.00%
+Learning Rate: 0.000420
+✓ New best model saved! (Higher training accuracy)
+  Train: 70.00% | Val: 65.00% | Gap: 5.00%
+--------------------------------------------------
+
+Epoch 47/75
+Train Loss: 2.3580 | Acc: 66.25%
+Val Loss: 0.5430 | Acc: 70.00% | F1: 0.679
+Accuracy Gap: 3.75%
+Learning Rate: 0.000420
+--------------------------------------------------
+
+Epoch 48/75
+Train Loss: 2.0508 | Acc: 73.12%
+Val Loss: 0.5183 | Acc: 75.00% | F1: 0.680
+Accuracy Gap: 1.88%
+Learning Rate: 0.000420
+✓ New best model saved! (Higher training accuracy)
+  Train: 73.12% | Val: 75.00% | Gap: 1.88%
+--------------------------------------------------
+
+Epoch 49/75
+Train Loss: 2.0523 | Acc: 73.75%
+Val Loss: 0.4037 | Acc: 77.50% | F1: 0.738
+Accuracy Gap: 3.75%
+Learning Rate: 0.000420
+✓ New best model saved! (Higher training accuracy)
+  Train: 73.75% | Val: 77.50% | Gap: 3.75%
+--------------------------------------------------
+
+Epoch 50/75
+Train Loss: 2.0899 | Acc: 73.75%
+Val Loss: 0.3312 | Acc: 85.00% | F1: 0.813
+Accuracy Gap: 11.25%
+Learning Rate: 0.000420
+⚠ Accuracy gap too large: 11.25% > 10% - Model not saved
+--------------------------------------------------
+
+Epoch 51/75
+Train Loss: 1.9810 | Acc: 75.00%
+Val Loss: 1.0749 | Acc: 57.50% | F1: 0.520
+Accuracy Gap: 17.50%
+Learning Rate: 0.000420
+⚠ Accuracy gap too large: 17.50% > 10% - Model not saved
+--------------------------------------------------
+
+Epoch 52/75
+Train Loss: 2.1034 | Acc: 69.38%
+Val Loss: 0.6277 | Acc: 70.00% | F1: 0.633
+Accuracy Gap: 0.62%
+Learning Rate: 0.000420
+--------------------------------------------------
+
+Epoch 53/75
+Train Loss: 1.9773 | Acc: 76.88%
+Val Loss: 0.4220 | Acc: 75.00% | F1: 0.732
+Accuracy Gap: 1.88%
+Learning Rate: 0.000420
+✓ New best model saved! (Higher training accuracy)
+  Train: 76.88% | Val: 75.00% | Gap: 1.88%
+--------------------------------------------------
+
+Epoch 54/75
+Train Loss: 2.0767 | Acc: 72.50%
+Val Loss: 0.4509 | Acc: 67.50% | F1: 0.655
+Accuracy Gap: 5.00%
+Learning Rate: 0.000420
+--------------------------------------------------
+
+Epoch 55/75
+Train Loss: 2.1967 | Acc: 71.88%
+Val Loss: 0.3043 | Acc: 87.50% | F1: 0.859
+Accuracy Gap: 15.62%
+Learning Rate: 0.000420
+⚠ Accuracy gap too large: 15.62% > 10% - Model not saved
+--------------------------------------------------
+
+Epoch 56/75
+Train Loss: 2.0859 | Acc: 75.62%
+Val Loss: 0.3032 | Acc: 85.00% | F1: 0.847
+Accuracy Gap: 9.38%
+Learning Rate: 0.000420
+--------------------------------------------------
+
+Epoch 57/75
+Train Loss: 2.0434 | Acc: 76.88%
+Val Loss: 0.3971 | Acc: 77.50% | F1: 0.778
+Accuracy Gap: 0.62%
+Learning Rate: 0.000420
+✓ New best model saved! (Same training accuracy, smaller gap)
+  Train: 76.88% | Val: 77.50% | Gap: 0.62%
+--------------------------------------------------
+
+Epoch 58/75
+Train Loss: 2.0198 | Acc: 74.38%
+Val Loss: 0.3745 | Acc: 80.00% | F1: 0.787
+Accuracy Gap: 5.63%
+Learning Rate: 0.000420
+--------------------------------------------------
+
+Epoch 59/75
+Train Loss: 1.7171 | Acc: 83.75%
+Val Loss: 0.3420 | Acc: 77.50% | F1: 0.771
+Accuracy Gap: 6.25%
+Learning Rate: 0.000420
+✓ New best model saved! (Higher training accuracy)
+  Train: 83.75% | Val: 77.50% | Gap: 6.25%
+--------------------------------------------------
+
+Epoch 60/75
+Train Loss: 1.8219 | Acc: 78.75%
+Val Loss: 0.3874 | Acc: 77.50% | F1: 0.755
+Accuracy Gap: 1.25%
+Learning Rate: 0.000420
+--------------------------------------------------
+
+Epoch 61/75
+Train Loss: 2.0481 | Acc: 81.25%
+Val Loss: 0.3478 | Acc: 82.50% | F1: 0.820
+Accuracy Gap: 1.25%
+Learning Rate: 0.000420
+--------------------------------------------------
+
+Epoch 62/75
+Train Loss: 1.7758 | Acc: 80.62%
+Val Loss: 0.3560 | Acc: 82.50% | F1: 0.820
+Accuracy Gap: 1.87%
+Learning Rate: 0.000420
+--------------------------------------------------
+
+Epoch 63/75
+Train Loss: 1.8805 | Acc: 79.38%
+Val Loss: 0.4465 | Acc: 85.00% | F1: 0.808
+Accuracy Gap: 5.63%
+Learning Rate: 0.000420
+--------------------------------------------------
+
+Epoch 64/75
+Train Loss: 1.9245 | Acc: 78.12%
+Val Loss: 0.3450 | Acc: 85.00% | F1: 0.847
+Accuracy Gap: 6.87%
+Learning Rate: 0.000420
+--------------------------------------------------
+
+Epoch 65/75
+Train Loss: 1.8058 | Acc: 78.12%
+Val Loss: 0.3725 | Acc: 82.50% | F1: 0.820
+Accuracy Gap: 4.37%
+Learning Rate: 0.000294
+--------------------------------------------------
+
+Epoch 66/75
+Train Loss: 1.9561 | Acc: 75.00%
+Val Loss: 0.4364 | Acc: 85.00% | F1: 0.834
+Accuracy Gap: 10.00%
+Learning Rate: 0.000294
+--------------------------------------------------
+
+Epoch 67/75
+Train Loss: 1.9690 | Acc: 76.88%
+Val Loss: 0.3891 | Acc: 82.50% | F1: 0.820
+Accuracy Gap: 5.62%
+Learning Rate: 0.000294
+--------------------------------------------------
+
+Epoch 68/75
+Train Loss: 1.7445 | Acc: 80.62%
+Val Loss: 0.4756 | Acc: 82.50% | F1: 0.820
+Accuracy Gap: 1.87%
+Learning Rate: 0.000294
+--------------------------------------------------
+
+Epoch 69/75
+Train Loss: 1.6059 | Acc: 80.00%
+Val Loss: 0.4493 | Acc: 80.00% | F1: 0.794
+Accuracy Gap: 0.00%
+Learning Rate: 0.000294
+--------------------------------------------------
+
+Epoch 70/75
+Train Loss: 1.5300 | Acc: 85.62%
+Val Loss: 0.4969 | Acc: 82.50% | F1: 0.821
+Accuracy Gap: 3.12%
+Learning Rate: 0.000294
+✓ New best model saved! (Higher training accuracy)
+  Train: 85.62% | Val: 82.50% | Gap: 3.12%
+--------------------------------------------------
+
+Epoch 71/75
+Train Loss: 1.4746 | Acc: 88.75%
+Val Loss: 0.5486 | Acc: 85.00% | F1: 0.847
+Accuracy Gap: 3.75%
+Learning Rate: 0.000294
+✓ New best model saved! (Higher training accuracy)
+  Train: 88.75% | Val: 85.00% | Gap: 3.75%
+--------------------------------------------------
+
+Epoch 72/75
+Train Loss: 1.4541 | Acc: 89.38%
+Val Loss: 0.5753 | Acc: 85.00% | F1: 0.847
+Accuracy Gap: 4.38%
+Learning Rate: 0.000294
+✓ New best model saved! (Higher training accuracy)
+  Train: 89.38% | Val: 85.00% | Gap: 4.38%
+--------------------------------------------------
+
+Epoch 73/75
+Train Loss: 1.7162 | Acc: 80.62%
+Val Loss: 0.5163 | Acc: 85.00% | F1: 0.847
+Accuracy Gap: 4.37%
+Learning Rate: 0.000294
+--------------------------------------------------
+
+Epoch 74/75
+Train Loss: 1.6303 | Acc: 84.38%
+Val Loss: 0.5238 | Acc: 82.50% | F1: 0.820
+Accuracy Gap: 1.88%
+Learning Rate: 0.000206
+--------------------------------------------------
+
+Epoch 75/75
+Train Loss: 1.4090 | Acc: 86.25%
+Val Loss: 0.5183 | Acc: 85.00% | F1: 0.847
+Accuracy Gap: 1.25%
+Learning Rate: 0.000206
+--------------------------------------------------
+
+==================================================
+IMPROVED MODEL TRAINING COMPLETED!
+==================================================
+Classes: 10
+Best Model - Train Acc: 89.38% | Val Acc: 85.00% | Gap: 4.38% | F1: 0.847
+Training Time: 391.1 minutes
+
+2. Training Advanced CNN-LSTM Model...
+
+============================================================
+Training ADVANCED model
+============================================================
+  Using GPU: NVIDIA L40
+   GPU Memory: 47.68 GB
+   CUDA Version: 12.8
+============================================================
+Adaptive parameters for 10 classes:
+  Learning rate: 0.000420
+  Epochs: 75
+  Batch size: 4
+  Patience: 25
+Loading samples with adaptive strategy...
+  Warning: abdomen has only 5 samples, duplicating to reach 20
+  Warning: above has only 5 samples, duplicating to reach 20
+  Warning: bug has only 5 samples, duplicating to reach 20
+  Warning: complete has only 5 samples, duplicating to reach 20
+  Warning: mad has only 6 samples, duplicating to reach 20
+  Warning: old has only 7 samples, duplicating to reach 20
+  Warning: illegal has only 6 samples, duplicating to reach 20
+  Warning: dismiss has only 6 samples, duplicating to reach 20
+  Warning: enough has only 5 samples, duplicating to reach 20
+  Warning: hurry has only 7 samples, duplicating to reach 20
+
+Dataset (advanced) - train:
+  Classes: 10
+  Total samples: 160
+  Min samples per class: 20
+  Max samples per class: 60
+  Class distribution:
+    abdomen: 16 samples
+    above: 16 samples
+    bug: 16 samples
+    complete: 16 samples
+    mad: 16 samples
+    old: 16 samples
+    illegal: 16 samples
+    dismiss: 16 samples
+    enough: 16 samples
+    hurry: 16 samples
+Loading samples with adaptive strategy...
+  Warning: abdomen has only 5 samples, duplicating to reach 20
+  Warning: above has only 5 samples, duplicating to reach 20
+  Warning: bug has only 5 samples, duplicating to reach 20
+  Warning: complete has only 5 samples, duplicating to reach 20
+  Warning: mad has only 6 samples, duplicating to reach 20
+  Warning: old has only 7 samples, duplicating to reach 20
+  Warning: illegal has only 6 samples, duplicating to reach 20
+  Warning: dismiss has only 6 samples, duplicating to reach 20
+  Warning: enough has only 5 samples, duplicating to reach 20
+  Warning: hurry has only 7 samples, duplicating to reach 20
+
+Dataset (advanced) - val:
+  Classes: 10
+  Total samples: 40
+  Min samples per class: 20
+  Max samples per class: 60
+  Class distribution:
+    abdomen: 4 samples
+    above: 4 samples
+    bug: 4 samples
+    complete: 4 samples
+    mad: 4 samples
+    old: 4 samples
+    illegal: 4 samples
+    dismiss: 4 samples
+    enough: 4 samples
+    hurry: 4 samples
+Detected input size for advanced model: 219
+
+Model parameters:
+  Total: 2,085,658
+  Trainable: 2,085,658
+Model architecture saved to op/10c_AM//advanced_cnnlstm_architecture.png
+
+Epoch 1/75
+Train Loss: 6.5484 | Acc: 28.12%
+Val Loss: 1.8402 | Acc: 35.00% | F1: 0.288
+Accuracy Gap: 6.87%
+Learning Rate: 0.000420
+✓ New best model saved! (Higher training accuracy)
+  Train: 28.12% | Val: 35.00% | Gap: 6.87%
+--------------------------------------------------
+
+Epoch 2/75
+Train Loss: 5.7601 | Acc: 41.25%
+Val Loss: 1.5197 | Acc: 50.00% | F1: 0.428
+Accuracy Gap: 8.75%
+Learning Rate: 0.000420
+✓ New best model saved! (Higher training accuracy)
+  Train: 41.25% | Val: 50.00% | Gap: 8.75%
+--------------------------------------------------
+
+Epoch 3/75
+Train Loss: 5.4222 | Acc: 44.38%
+Val Loss: 1.3483 | Acc: 50.00% | F1: 0.466
+Accuracy Gap: 5.63%
+Learning Rate: 0.000420
+✓ New best model saved! (Higher training accuracy)
+  Train: 44.38% | Val: 50.00% | Gap: 5.63%
+--------------------------------------------------
+
+Epoch 4/75
+Train Loss: 4.9360 | Acc: 59.38%
+Val Loss: 1.1405 | Acc: 70.00% | F1: 0.629
+Accuracy Gap: 10.62%
+Learning Rate: 0.000420
+⚠ Accuracy gap too large: 10.62% > 10% - Model not saved
+--------------------------------------------------
+
+Epoch 5/75
+Train Loss: 4.6805 | Acc: 58.13%
+Val Loss: 0.8813 | Acc: 87.50% | F1: 0.862
+Accuracy Gap: 29.37%
+Learning Rate: 0.000420
+⚠ Accuracy gap too large: 29.37% > 10% - Model not saved
+--------------------------------------------------
+
+Epoch 6/75
+Train Loss: 4.4216 | Acc: 65.00%
+Val Loss: 0.8382 | Acc: 90.00% | F1: 0.893
+Accuracy Gap: 25.00%
+Learning Rate: 0.000420
+⚠ Accuracy gap too large: 25.00% > 10% - Model not saved
+--------------------------------------------------
+
+Epoch 7/75
+Train Loss: 4.3229 | Acc: 63.75%
+Val Loss: 0.9398 | Acc: 82.50% | F1: 0.809
+Accuracy Gap: 18.75%
+Learning Rate: 0.000420
+⚠ Accuracy gap too large: 18.75% > 10% - Model not saved
+--------------------------------------------------
+
+Epoch 8/75
+Train Loss: 4.0702 | Acc: 71.88%
+Val Loss: 1.3477 | Acc: 75.00% | F1: 0.699
+Accuracy Gap: 3.12%
+Learning Rate: 0.000420
+✓ New best model saved! (Higher training accuracy)
+  Train: 71.88% | Val: 75.00% | Gap: 3.12%
+--------------------------------------------------
+
+Epoch 9/75
+Train Loss: 4.1724 | Acc: 60.62%
+Val Loss: 0.8191 | Acc: 95.00% | F1: 0.950
+Accuracy Gap: 34.38%
+Learning Rate: 0.000420
+⚠ Accuracy gap too large: 34.38% > 10% - Model not saved
+--------------------------------------------------
+
+Epoch 10/75
+Train Loss: 3.8119 | Acc: 75.62%
+Val Loss: 0.9446 | Acc: 82.50% | F1: 0.813
+Accuracy Gap: 6.87%
+Learning Rate: 0.000420
+✓ New best model saved! (Higher training accuracy)
+  Train: 75.62% | Val: 82.50% | Gap: 6.87%
+--------------------------------------------------
+
+Epoch 11/75
+Train Loss: 3.7087 | Acc: 75.00%
+Val Loss: 0.7099 | Acc: 97.50% | F1: 0.975
+Accuracy Gap: 22.50%
+Learning Rate: 0.000420
+⚠ Accuracy gap too large: 22.50% > 10% - Model not saved
+--------------------------------------------------
+
+Epoch 12/75
+Train Loss: 3.5436 | Acc: 78.12%
+Val Loss: 0.7508 | Acc: 92.50% | F1: 0.913
+Accuracy Gap: 14.38%
+Learning Rate: 0.000420
+⚠ Accuracy gap too large: 14.38% > 10% - Model not saved
+--------------------------------------------------
+
+Epoch 13/75
+Train Loss: 3.5343 | Acc: 78.75%
+Val Loss: 0.7550 | Acc: 92.50% | F1: 0.913
+Accuracy Gap: 13.75%
+Learning Rate: 0.000420
+⚠ Accuracy gap too large: 13.75% > 10% - Model not saved
+--------------------------------------------------
+
+Epoch 14/75
+Train Loss: 3.4286 | Acc: 79.38%
+Val Loss: 0.7352 | Acc: 92.50% | F1: 0.913
+Accuracy Gap: 13.13%
+Learning Rate: 0.000420
+⚠ Accuracy gap too large: 13.13% > 10% - Model not saved
+--------------------------------------------------
+
+Epoch 15/75
+Train Loss: 3.3613 | Acc: 80.62%
+Val Loss: 0.8553 | Acc: 97.50% | F1: 0.975
+Accuracy Gap: 16.87%
+Learning Rate: 0.000420
+⚠ Accuracy gap too large: 16.87% > 10% - Model not saved
+--------------------------------------------------
+
+Epoch 16/75
+Train Loss: 3.3851 | Acc: 80.00%
+Val Loss: 0.7575 | Acc: 90.00% | F1: 0.867
+Accuracy Gap: 10.00%
+Learning Rate: 0.000420
+✓ New best model saved! (Higher training accuracy)
+  Train: 80.00% | Val: 90.00% | Gap: 10.00%
+--------------------------------------------------
+
+Epoch 17/75
+Train Loss: 3.1949 | Acc: 86.25%
+Val Loss: 1.0156 | Acc: 87.50% | F1: 0.856
+Accuracy Gap: 1.25%
+Learning Rate: 0.000420
+✓ New best model saved! (Higher training accuracy)
+  Train: 86.25% | Val: 87.50% | Gap: 1.25%
+--------------------------------------------------
+
+Epoch 18/75
+Train Loss: 3.1439 | Acc: 85.00%
+Val Loss: 0.7271 | Acc: 92.50% | F1: 0.921
+Accuracy Gap: 7.50%
+Learning Rate: 0.000420
+--------------------------------------------------
+
+Epoch 19/75
+Train Loss: 3.1058 | Acc: 85.00%
+Val Loss: 0.6845 | Acc: 97.50% | F1: 0.975
+Accuracy Gap: 12.50%
+Learning Rate: 0.000420
+⚠ Accuracy gap too large: 12.50% > 10% - Model not saved
+--------------------------------------------------
+
+Epoch 20/75
+Train Loss: 3.0453 | Acc: 86.25%
+Val Loss: 0.6600 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 13.75%
+Learning Rate: 0.000420
+⚠ Accuracy gap too large: 13.75% > 10% - Model not saved
+--------------------------------------------------
+
+Epoch 21/75
+Train Loss: 3.0744 | Acc: 83.12%
+Val Loss: 0.7905 | Acc: 90.00% | F1: 0.887
+Accuracy Gap: 6.87%
+Learning Rate: 0.000420
+--------------------------------------------------
+
+Epoch 22/75
+Train Loss: 3.0017 | Acc: 84.38%
+Val Loss: 0.7374 | Acc: 90.00% | F1: 0.893
+Accuracy Gap: 5.63%
+Learning Rate: 0.000420
+--------------------------------------------------
+
+Epoch 23/75
+Train Loss: 2.8953 | Acc: 85.62%
+Val Loss: 0.7511 | Acc: 97.50% | F1: 0.975
+Accuracy Gap: 11.88%
+Learning Rate: 0.000420
+⚠ Accuracy gap too large: 11.88% > 10% - Model not saved
+--------------------------------------------------
+
+Epoch 24/75
+Train Loss: 2.8865 | Acc: 86.25%
+Val Loss: 0.6719 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 13.75%
+Learning Rate: 0.000420
+⚠ Accuracy gap too large: 13.75% > 10% - Model not saved
+--------------------------------------------------
+
+Epoch 25/75
+Train Loss: 2.7777 | Acc: 85.62%
+Val Loss: 0.6255 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 14.38%
+Learning Rate: 0.000420
+⚠ Accuracy gap too large: 14.38% > 10% - Model not saved
+--------------------------------------------------
+
+Epoch 26/75
+Train Loss: 2.6924 | Acc: 87.50%
+Val Loss: 0.7569 | Acc: 92.50% | F1: 0.913
+Accuracy Gap: 5.00%
+Learning Rate: 0.000420
+✓ New best model saved! (Higher training accuracy)
+  Train: 87.50% | Val: 92.50% | Gap: 5.00%
+--------------------------------------------------
+
+Epoch 27/75
+Train Loss: 2.6106 | Acc: 90.00%
+Val Loss: 0.6387 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 10.00%
+Learning Rate: 0.000420
+✓ New best model saved! (Higher training accuracy)
+  Train: 90.00% | Val: 100.00% | Gap: 10.00%
+--------------------------------------------------
+
+Epoch 28/75
+Train Loss: 2.7272 | Acc: 85.62%
+Val Loss: 0.6827 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 14.38%
+Learning Rate: 0.000420
+⚠ Accuracy gap too large: 14.38% > 10% - Model not saved
+--------------------------------------------------
+
+Epoch 29/75
+Train Loss: 2.5836 | Acc: 89.38%
+Val Loss: 0.6405 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 10.62%
+Learning Rate: 0.000420
+⚠ Accuracy gap too large: 10.62% > 10% - Model not saved
+--------------------------------------------------
+
+Epoch 30/75
+Train Loss: 2.5186 | Acc: 88.12%
+Val Loss: 0.6431 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 11.88%
+Learning Rate: 0.000420
+⚠ Accuracy gap too large: 11.88% > 10% - Model not saved
+--------------------------------------------------
+
+Epoch 31/75
+Train Loss: 2.4932 | Acc: 88.75%
+Val Loss: 0.6310 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 11.25%
+Learning Rate: 0.000420
+⚠ Accuracy gap too large: 11.25% > 10% - Model not saved
+--------------------------------------------------
+
+Epoch 32/75
+Train Loss: 2.3709 | Acc: 91.25%
+Val Loss: 0.7854 | Acc: 92.50% | F1: 0.913
+Accuracy Gap: 1.25%
+Learning Rate: 0.000420
+✓ New best model saved! (Higher training accuracy)
+  Train: 91.25% | Val: 92.50% | Gap: 1.25%
+--------------------------------------------------
+
+Epoch 33/75
+Train Loss: 2.4313 | Acc: 86.88%
+Val Loss: 0.6867 | Acc: 95.00% | F1: 0.947
+Accuracy Gap: 8.12%
+Learning Rate: 0.000420
+--------------------------------------------------
+
+Epoch 34/75
+Train Loss: 2.4132 | Acc: 86.25%
+Val Loss: 0.6399 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 13.75%
+Learning Rate: 0.000294
+⚠ Accuracy gap too large: 13.75% > 10% - Model not saved
+--------------------------------------------------
+
+Epoch 35/75
+Train Loss: 2.2363 | Acc: 95.00%
+Val Loss: 0.6289 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 5.00%
+Learning Rate: 0.000294
+✓ New best model saved! (Higher training accuracy)
+  Train: 95.00% | Val: 100.00% | Gap: 5.00%
+--------------------------------------------------
+
+Epoch 36/75
+Train Loss: 2.2147 | Acc: 95.00%
+Val Loss: 0.6314 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 5.00%
+Learning Rate: 0.000294
+--------------------------------------------------
+
+Epoch 37/75
+Train Loss: 2.1762 | Acc: 93.12%
+Val Loss: 0.5930 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 6.87%
+Learning Rate: 0.000294
+--------------------------------------------------
+
+Epoch 38/75
+Train Loss: 2.1663 | Acc: 91.88%
+Val Loss: 0.6170 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 8.13%
+Learning Rate: 0.000294
+--------------------------------------------------
+
+Epoch 39/75
+Train Loss: 2.1859 | Acc: 91.88%
+Val Loss: 0.6109 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 8.13%
+Learning Rate: 0.000294
+--------------------------------------------------
+
+Epoch 40/75
+Train Loss: 2.0330 | Acc: 96.88%
+Val Loss: 0.6162 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 3.12%
+Learning Rate: 0.000294
+✓ New best model saved! (Higher training accuracy)
+  Train: 96.88% | Val: 100.00% | Gap: 3.12%
+--------------------------------------------------
+
+Epoch 41/75
+Train Loss: 2.1379 | Acc: 91.88%
+Val Loss: 0.6169 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 8.13%
+Learning Rate: 0.000294
+--------------------------------------------------
+
+Epoch 42/75
+Train Loss: 2.0727 | Acc: 91.88%
+Val Loss: 0.6225 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 8.13%
+Learning Rate: 0.000294
+--------------------------------------------------
+
+Epoch 43/75
+Train Loss: 1.9440 | Acc: 95.62%
+Val Loss: 0.6142 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 4.37%
+Learning Rate: 0.000294
+--------------------------------------------------
+
+Epoch 44/75
+Train Loss: 2.0242 | Acc: 93.12%
+Val Loss: 0.6014 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 6.87%
+Learning Rate: 0.000294
+--------------------------------------------------
+
+Epoch 45/75
+Train Loss: 1.9390 | Acc: 93.75%
+Val Loss: 0.6392 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 6.25%
+Learning Rate: 0.000294
+--------------------------------------------------
+
+Epoch 46/75
+Train Loss: 1.9799 | Acc: 91.25%
+Val Loss: 0.6390 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 8.75%
+Learning Rate: 0.000206
+--------------------------------------------------
+
+Epoch 47/75
+Train Loss: 1.8876 | Acc: 95.00%
+Val Loss: 0.5958 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 5.00%
+Learning Rate: 0.000206
+--------------------------------------------------
+
+Epoch 48/75
+Train Loss: 1.8217 | Acc: 96.88%
+Val Loss: 0.5832 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 3.12%
+Learning Rate: 0.000206
+--------------------------------------------------
+
+Epoch 49/75
+Train Loss: 1.8663 | Acc: 94.38%
+Val Loss: 0.6128 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 5.63%
+Learning Rate: 0.000206
+--------------------------------------------------
+
+Epoch 50/75
+Train Loss: 1.8398 | Acc: 93.75%
+Val Loss: 0.6030 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 6.25%
+Learning Rate: 0.000206
+--------------------------------------------------
+
+Epoch 51/75
+Train Loss: 1.8029 | Acc: 97.50%
+Val Loss: 0.6253 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 2.50%
+Learning Rate: 0.000206
+✓ New best model saved! (Higher training accuracy)
+  Train: 97.50% | Val: 100.00% | Gap: 2.50%
+--------------------------------------------------
+
+Epoch 52/75
+Train Loss: 1.8083 | Acc: 94.38%
+Val Loss: 0.5888 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 5.63%
+Learning Rate: 0.000206
+--------------------------------------------------
+
+Epoch 53/75
+Train Loss: 1.7577 | Acc: 96.25%
+Val Loss: 0.6030 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 3.75%
+Learning Rate: 0.000206
+--------------------------------------------------
+
+Epoch 54/75
+Train Loss: 1.7575 | Acc: 95.62%
+Val Loss: 0.6114 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 4.37%
+Learning Rate: 0.000206
+--------------------------------------------------
+
+Epoch 55/75
+Train Loss: 1.8096 | Acc: 93.12%
+Val Loss: 0.6269 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 6.87%
+Learning Rate: 0.000206
+--------------------------------------------------
+
+Epoch 56/75
+Train Loss: 1.7544 | Acc: 93.75%
+Val Loss: 0.6192 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 6.25%
+Learning Rate: 0.000206
+--------------------------------------------------
+
+Epoch 57/75
+Train Loss: 1.6872 | Acc: 95.62%
+Val Loss: 0.5827 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 4.37%
+Learning Rate: 0.000206
+--------------------------------------------------
+
+Epoch 58/75
+Train Loss: 1.7110 | Acc: 96.25%
+Val Loss: 0.5928 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 3.75%
+Learning Rate: 0.000206
+--------------------------------------------------
+
+Epoch 59/75
+Train Loss: 1.6709 | Acc: 95.62%
+Val Loss: 0.6094 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 4.37%
+Learning Rate: 0.000206
+--------------------------------------------------
+
+Epoch 60/75
+Train Loss: 1.7327 | Acc: 93.12%
+Val Loss: 0.6097 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 6.87%
+Learning Rate: 0.000206
+--------------------------------------------------
+
+Epoch 61/75
+Train Loss: 1.6435 | Acc: 96.25%
+Val Loss: 0.5913 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 3.75%
+Learning Rate: 0.000206
+--------------------------------------------------
+
+Epoch 62/75
+Train Loss: 1.6123 | Acc: 98.12%
+Val Loss: 0.5884 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 1.88%
+Learning Rate: 0.000206
+✓ New best model saved! (Higher training accuracy)
+  Train: 98.12% | Val: 100.00% | Gap: 1.88%
+--------------------------------------------------
+
+Epoch 63/75
+Train Loss: 1.6989 | Acc: 94.38%
+Val Loss: 0.6080 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 5.63%
+Learning Rate: 0.000206
+--------------------------------------------------
+
+Epoch 64/75
+Train Loss: 1.6079 | Acc: 95.00%
+Val Loss: 0.6513 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 5.00%
+Learning Rate: 0.000206
+--------------------------------------------------
+
+Epoch 65/75
+Train Loss: 1.6527 | Acc: 95.62%
+Val Loss: 0.5898 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 4.37%
+Learning Rate: 0.000206
+--------------------------------------------------
+
+Epoch 66/75
+Train Loss: 1.5781 | Acc: 96.88%
+Val Loss: 0.6327 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 3.12%
+Learning Rate: 0.000144
+--------------------------------------------------
+
+Epoch 67/75
+Train Loss: 1.5533 | Acc: 96.88%
+Val Loss: 0.6111 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 3.12%
+Learning Rate: 0.000144
+--------------------------------------------------
+
+Epoch 68/75
+Train Loss: 1.5540 | Acc: 96.25%
+Val Loss: 0.5809 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 3.75%
+Learning Rate: 0.000144
+--------------------------------------------------
+
+Epoch 69/75
+Train Loss: 1.5152 | Acc: 98.75%
+Val Loss: 0.5853 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 1.25%
+Learning Rate: 0.000144
+✓ New best model saved! (Higher training accuracy)
+  Train: 98.75% | Val: 100.00% | Gap: 1.25%
+--------------------------------------------------
+
+Epoch 70/75
+Train Loss: 1.5006 | Acc: 97.50%
+Val Loss: 0.5877 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 2.50%
+Learning Rate: 0.000144
+--------------------------------------------------
+
+Epoch 71/75
+Train Loss: 1.5380 | Acc: 95.62%
+Val Loss: 0.6182 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 4.37%
+Learning Rate: 0.000144
+--------------------------------------------------
+
+Epoch 72/75
+Train Loss: 1.4718 | Acc: 99.38%
+Val Loss: 0.5802 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 0.62%
+Learning Rate: 0.000144
+✓ New best model saved! (Higher training accuracy)
+  Train: 99.38% | Val: 100.00% | Gap: 0.62%
+--------------------------------------------------
+
+Epoch 73/75
+Train Loss: 1.5201 | Acc: 97.50%
+Val Loss: 0.5971 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 2.50%
+Learning Rate: 0.000144
+--------------------------------------------------
+
+Epoch 74/75
+Train Loss: 1.4888 | Acc: 97.50%
+Val Loss: 0.5867 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 2.50%
+Learning Rate: 0.000144
+--------------------------------------------------
+
+Epoch 75/75
+Train Loss: 1.5221 | Acc: 93.12%
+Val Loss: 0.5880 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 6.87%
+Learning Rate: 0.000144
+--------------------------------------------------
+
+==================================================
+ADVANCED MODEL TRAINING COMPLETED!
+==================================================
+Classes: 10
+Best Model - Train Acc: 99.38% | Val Acc: 100.00% | Gap: 0.62% | F1: 1.000
+Training Time: 392.3 minutes
+
+3. Training Ensemble Model...
+
+============================================================
+Training ENSEMBLE model
+============================================================
+ Using GPU: NVIDIA L40
+   GPU Memory: 47.68 GB
+   Available Memory: 0.02 GB allocated
+============================================================
+Loading samples with adaptive strategy...
+  Warning: abdomen has only 5 samples, duplicating to reach 20
+  Warning: above has only 5 samples, duplicating to reach 20
+  Warning: bug has only 5 samples, duplicating to reach 20
+  Warning: complete has only 5 samples, duplicating to reach 20
+  Warning: mad has only 6 samples, duplicating to reach 20
+  Warning: old has only 7 samples, duplicating to reach 20
+  Warning: illegal has only 6 samples, duplicating to reach 20
+  Warning: dismiss has only 6 samples, duplicating to reach 20
+  Warning: enough has only 5 samples, duplicating to reach 20
+  Warning: hurry has only 7 samples, duplicating to reach 20
+
+Dataset (improved) - train:
+  Classes: 10
+  Total samples: 160
+  Min samples per class: 20
+  Max samples per class: 60
+  Class distribution:
+    abdomen: 16 samples
+    above: 16 samples
+    bug: 16 samples
+    complete: 16 samples
+    mad: 16 samples
+    old: 16 samples
+    illegal: 16 samples
+    dismiss: 16 samples
+    enough: 16 samples
+    hurry: 16 samples
+Loading samples with adaptive strategy...
+  Warning: abdomen has only 5 samples, duplicating to reach 20
+  Warning: above has only 5 samples, duplicating to reach 20
+  Warning: bug has only 5 samples, duplicating to reach 20
+  Warning: complete has only 5 samples, duplicating to reach 20
+  Warning: mad has only 6 samples, duplicating to reach 20
+  Warning: old has only 7 samples, duplicating to reach 20
+  Warning: illegal has only 6 samples, duplicating to reach 20
+  Warning: dismiss has only 6 samples, duplicating to reach 20
+  Warning: enough has only 5 samples, duplicating to reach 20
+  Warning: hurry has only 7 samples, duplicating to reach 20
+
+Dataset (advanced) - train:
+  Classes: 10
+  Total samples: 160
+  Min samples per class: 20
+  Max samples per class: 60
+  Class distribution:
+    abdomen: 16 samples
+    above: 16 samples
+    bug: 16 samples
+    complete: 16 samples
+    mad: 16 samples
+    old: 16 samples
+    illegal: 16 samples
+    dismiss: 16 samples
+    enough: 16 samples
+    hurry: 16 samples
+Loading samples with adaptive strategy...
+  Warning: abdomen has only 5 samples, duplicating to reach 20
+  Warning: above has only 5 samples, duplicating to reach 20
+  Warning: bug has only 5 samples, duplicating to reach 20
+  Warning: complete has only 5 samples, duplicating to reach 20
+  Warning: mad has only 6 samples, duplicating to reach 20
+  Warning: old has only 7 samples, duplicating to reach 20
+  Warning: illegal has only 6 samples, duplicating to reach 20
+  Warning: dismiss has only 6 samples, duplicating to reach 20
+  Warning: enough has only 5 samples, duplicating to reach 20
+  Warning: hurry has only 7 samples, duplicating to reach 20
+
+Dataset (improved) - val:
+  Classes: 10
+  Total samples: 40
+  Min samples per class: 20
+  Max samples per class: 60
+  Class distribution:
+    abdomen: 4 samples
+    above: 4 samples
+    bug: 4 samples
+    complete: 4 samples
+    mad: 4 samples
+    old: 4 samples
+    illegal: 4 samples
+    dismiss: 4 samples
+    enough: 4 samples
+    hurry: 4 samples
+Loading samples with adaptive strategy...
+  Warning: abdomen has only 5 samples, duplicating to reach 20
+  Warning: above has only 5 samples, duplicating to reach 20
+  Warning: bug has only 5 samples, duplicating to reach 20
+  Warning: complete has only 5 samples, duplicating to reach 20
+  Warning: mad has only 6 samples, duplicating to reach 20
+  Warning: old has only 7 samples, duplicating to reach 20
+  Warning: illegal has only 6 samples, duplicating to reach 20
+  Warning: dismiss has only 6 samples, duplicating to reach 20
+  Warning: enough has only 5 samples, duplicating to reach 20
+  Warning: hurry has only 7 samples, duplicating to reach 20
+
+Dataset (advanced) - val:
+  Classes: 10
+  Total samples: 40
+  Min samples per class: 20
+  Max samples per class: 60
+  Class distribution:
+    abdomen: 4 samples
+    above: 4 samples
+    bug: 4 samples
+    complete: 4 samples
+    mad: 4 samples
+    old: 4 samples
+    illegal: 4 samples
+    dismiss: 4 samples
+    enough: 4 samples
+    hurry: 4 samples
+
+Ensemble model input sizes - Model 1: 138, Model 2: 219
+Model architecture saved to op/10c_AM//ensemble_model_architecture.png
+
+Epoch 1/75
+Train Loss: 2.1247 | Acc: 30.63%
+Val Loss: 1.6422 | Acc: 52.50% | F1: 0.488
+Accuracy Gap: 21.88%
+⚠ Accuracy gap too large: 21.88% > 10% - Model not saved
+--------------------------------------------------
+
+Epoch 2/75
+Train Loss: 1.5935 | Acc: 41.25%
+Val Loss: 1.0497 | Acc: 72.50% | F1: 0.676
+Accuracy Gap: 31.25%
+⚠ Accuracy gap too large: 31.25% > 10% - Model not saved
+--------------------------------------------------
+
+Epoch 3/75
+Train Loss: 1.4773 | Acc: 46.25%
+Val Loss: 0.8733 | Acc: 77.50% | F1: 0.721
+Accuracy Gap: 31.25%
+⚠ Accuracy gap too large: 31.25% > 10% - Model not saved
+--------------------------------------------------
+
+Epoch 4/75
+Train Loss: 1.4102 | Acc: 51.88%
+Val Loss: 1.4499 | Acc: 57.50% | F1: 0.508
+Accuracy Gap: 5.62%
+✓ New best ensemble model! (Higher training accuracy)
+  Train: 51.88% | Val: 57.50% | Gap: 5.62%
+--------------------------------------------------
+
+Epoch 5/75
+Train Loss: 1.2375 | Acc: 55.62%
+Val Loss: 0.5823 | Acc: 90.00% | F1: 0.883
+Accuracy Gap: 34.38%
+⚠ Accuracy gap too large: 34.38% > 10% - Model not saved
+--------------------------------------------------
+
+Epoch 6/75
+Train Loss: 0.8987 | Acc: 65.62%
+Val Loss: 1.3065 | Acc: 62.50% | F1: 0.563
+Accuracy Gap: 3.12%
+✓ New best ensemble model! (Higher training accuracy)
+  Train: 65.62% | Val: 62.50% | Gap: 3.12%
+--------------------------------------------------
+
+Epoch 7/75
+Train Loss: 0.9471 | Acc: 66.25%
+Val Loss: 0.3841 | Acc: 82.50% | F1: 0.816
+Accuracy Gap: 16.25%
+⚠ Accuracy gap too large: 16.25% > 10% - Model not saved
+--------------------------------------------------
+
+Epoch 8/75
+Train Loss: 0.8674 | Acc: 73.75%
+Val Loss: 0.3353 | Acc: 92.50% | F1: 0.907
+Accuracy Gap: 18.75%
+⚠ Accuracy gap too large: 18.75% > 10% - Model not saved
+--------------------------------------------------
+
+Epoch 9/75
+Train Loss: 0.9447 | Acc: 68.75%
+Val Loss: 0.5329 | Acc: 82.50% | F1: 0.788
+Accuracy Gap: 13.75%
+⚠ Accuracy gap too large: 13.75% > 10% - Model not saved
+--------------------------------------------------
+
+Epoch 10/75
+Train Loss: 0.8756 | Acc: 71.25%
+Val Loss: 0.3747 | Acc: 90.00% | F1: 0.893
+Accuracy Gap: 18.75%
+⚠ Accuracy gap too large: 18.75% > 10% - Model not saved
+--------------------------------------------------
+
+Epoch 11/75
+Train Loss: 0.6720 | Acc: 77.50%
+Val Loss: 0.2612 | Acc: 92.50% | F1: 0.913
+Accuracy Gap: 15.00%
+⚠ Accuracy gap too large: 15.00% > 10% - Model not saved
+--------------------------------------------------
+
+Epoch 12/75
+Train Loss: 0.8502 | Acc: 78.12%
+Val Loss: 0.0945 | Acc: 97.50% | F1: 0.975
+Accuracy Gap: 19.37%
+⚠ Accuracy gap too large: 19.37% > 10% - Model not saved
+--------------------------------------------------
+
+Epoch 13/75
+Train Loss: 0.7024 | Acc: 79.38%
+Val Loss: 0.9489 | Acc: 82.50% | F1: 0.788
+Accuracy Gap: 3.12%
+✓ New best ensemble model! (Higher training accuracy)
+  Train: 79.38% | Val: 82.50% | Gap: 3.12%
+--------------------------------------------------
+
+Epoch 14/75
+Train Loss: 0.5712 | Acc: 83.75%
+Val Loss: 0.2256 | Acc: 97.50% | F1: 0.975
+Accuracy Gap: 13.75%
+⚠ Accuracy gap too large: 13.75% > 10% - Model not saved
+--------------------------------------------------
+
+Epoch 15/75
+Train Loss: 0.5370 | Acc: 81.88%
+Val Loss: 0.1084 | Acc: 92.50% | F1: 0.921
+Accuracy Gap: 10.63%
+⚠ Accuracy gap too large: 10.63% > 10% - Model not saved
+--------------------------------------------------
+
+Epoch 16/75
+Train Loss: 0.4866 | Acc: 85.00%
+Val Loss: 0.0125 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 15.00%
+⚠ Accuracy gap too large: 15.00% > 10% - Model not saved
+--------------------------------------------------
+
+Epoch 17/75
+Train Loss: 0.5118 | Acc: 85.62%
+Val Loss: 0.3496 | Acc: 90.00% | F1: 0.900
+Accuracy Gap: 4.38%
+✓ New best ensemble model! (Higher training accuracy)
+  Train: 85.62% | Val: 90.00% | Gap: 4.38%
+--------------------------------------------------
+
+Epoch 18/75
+Train Loss: 0.4993 | Acc: 85.62%
+Val Loss: 0.0230 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 14.38%
+⚠ Accuracy gap too large: 14.38% > 10% - Model not saved
+--------------------------------------------------
+
+Epoch 19/75
+Train Loss: 0.4386 | Acc: 89.38%
+Val Loss: 0.0091 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 10.62%
+⚠ Accuracy gap too large: 10.62% > 10% - Model not saved
+--------------------------------------------------
+
+Epoch 20/75
+Train Loss: 0.3706 | Acc: 88.75%
+Val Loss: 0.0458 | Acc: 95.00% | F1: 0.947
+Accuracy Gap: 6.25%
+✓ New best ensemble model! (Higher training accuracy)
+  Train: 88.75% | Val: 95.00% | Gap: 6.25%
+--------------------------------------------------
+
+Epoch 21/75
+Train Loss: 0.1912 | Acc: 93.12%
+Val Loss: 0.0028 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 6.87%
+✓ New best ensemble model! (Higher training accuracy)
+  Train: 93.12% | Val: 100.00% | Gap: 6.87%
+--------------------------------------------------
+
+Epoch 22/75
+Train Loss: 0.2260 | Acc: 91.25%
+Val Loss: 0.5806 | Acc: 92.50% | F1: 0.921
+Accuracy Gap: 1.25%
+--------------------------------------------------
+
+Epoch 23/75
+Train Loss: 0.3140 | Acc: 91.25%
+Val Loss: 0.0013 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 8.75%
+--------------------------------------------------
+
+Epoch 24/75
+Train Loss: 0.1974 | Acc: 95.62%
+Val Loss: 0.0013 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 4.37%
+✓ New best ensemble model! (Higher training accuracy)
+  Train: 95.62% | Val: 100.00% | Gap: 4.37%
+--------------------------------------------------
+
+Epoch 25/75
+Train Loss: 0.1968 | Acc: 96.25%
+Val Loss: 0.5931 | Acc: 95.00% | F1: 0.947
+Accuracy Gap: 1.25%
+✓ New best ensemble model! (Higher training accuracy)
+  Train: 96.25% | Val: 95.00% | Gap: 1.25%
+--------------------------------------------------
+
+Epoch 26/75
+Train Loss: 0.4207 | Acc: 89.38%
+Val Loss: 0.0178 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 10.62%
+⚠ Accuracy gap too large: 10.62% > 10% - Model not saved
+--------------------------------------------------
+
+Epoch 27/75
+Train Loss: 0.2679 | Acc: 91.88%
+Val Loss: 0.0001 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 8.13%
+--------------------------------------------------
+
+Epoch 28/75
+Train Loss: 0.1920 | Acc: 95.62%
+Val Loss: 0.0003 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 4.37%
+--------------------------------------------------
+
+Epoch 29/75
+Train Loss: 0.3111 | Acc: 93.75%
+Val Loss: 0.0771 | Acc: 97.50% | F1: 0.975
+Accuracy Gap: 3.75%
+--------------------------------------------------
+
+Epoch 30/75
+Train Loss: 0.1803 | Acc: 94.38%
+Val Loss: 0.0056 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 5.63%
+--------------------------------------------------
+
+Epoch 31/75
+Train Loss: 0.1653 | Acc: 96.25%
+Val Loss: 0.0001 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 3.75%
+--------------------------------------------------
+
+Epoch 32/75
+Train Loss: 0.2375 | Acc: 96.25%
+Val Loss: 0.0003 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 3.75%
+--------------------------------------------------
+
+Epoch 33/75
+Train Loss: 0.1855 | Acc: 97.50%
+Val Loss: 0.0004 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 2.50%
+✓ New best ensemble model! (Higher training accuracy)
+  Train: 97.50% | Val: 100.00% | Gap: 2.50%
+--------------------------------------------------
+
+Epoch 34/75
+Train Loss: 0.1825 | Acc: 93.75%
+Val Loss: 0.0003 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 6.25%
+--------------------------------------------------
+
+Epoch 35/75
+Train Loss: 0.1303 | Acc: 96.25%
+Val Loss: 0.0003 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 3.75%
+--------------------------------------------------
+
+Epoch 36/75
+Train Loss: 0.0837 | Acc: 98.75%
+Val Loss: 0.0566 | Acc: 95.00% | F1: 0.947
+Accuracy Gap: 3.75%
+✓ New best ensemble model! (Higher training accuracy)
+  Train: 98.75% | Val: 95.00% | Gap: 3.75%
+--------------------------------------------------
+
+Epoch 37/75
+Train Loss: 0.3070 | Acc: 94.38%
+Val Loss: 0.0001 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 5.63%
+--------------------------------------------------
+
+Epoch 38/75
+Train Loss: 0.2239 | Acc: 96.25%
+Val Loss: 0.0273 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 3.75%
+--------------------------------------------------
+
+Epoch 39/75
+Train Loss: 0.3671 | Acc: 92.50%
+Val Loss: 0.0583 | Acc: 95.00% | F1: 0.947
+Accuracy Gap: 2.50%
+--------------------------------------------------
+
+Epoch 40/75
+Train Loss: 0.2916 | Acc: 95.00%
+Val Loss: 0.0021 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 5.00%
+--------------------------------------------------
+
+Epoch 41/75
+Train Loss: 0.1257 | Acc: 98.12%
+Val Loss: 0.2108 | Acc: 95.00% | F1: 0.947
+Accuracy Gap: 3.12%
+--------------------------------------------------
+
+Epoch 42/75
+Train Loss: 0.1452 | Acc: 97.50%
+Val Loss: 0.1702 | Acc: 95.00% | F1: 0.947
+Accuracy Gap: 2.50%
+--------------------------------------------------
+
+Epoch 43/75
+Train Loss: 0.1478 | Acc: 96.25%
+Val Loss: 0.0000 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 3.75%
+--------------------------------------------------
+
+Epoch 44/75
+Train Loss: 0.1818 | Acc: 96.88%
+Val Loss: 0.0024 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 3.12%
+--------------------------------------------------
+
+Epoch 45/75
+Train Loss: 0.1393 | Acc: 95.62%
+Val Loss: 0.0002 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 4.37%
+--------------------------------------------------
+
+Epoch 46/75
+Train Loss: 0.0506 | Acc: 98.75%
+Val Loss: 0.0000 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 1.25%
+✓ New best ensemble model! (Same training accuracy, smaller gap)
+  Train: 98.75% | Val: 100.00% | Gap: 1.25%
+--------------------------------------------------
+
+Epoch 47/75
+Train Loss: 0.1310 | Acc: 97.50%
+Val Loss: 0.0041 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 2.50%
+--------------------------------------------------
+
+Epoch 48/75
+Train Loss: 0.0162 | Acc: 99.38%
+Val Loss: 0.2275 | Acc: 95.00% | F1: 0.947
+Accuracy Gap: 4.38%
+✓ New best ensemble model! (Higher training accuracy)
+  Train: 99.38% | Val: 95.00% | Gap: 4.38%
+--------------------------------------------------
+
+Epoch 49/75
+Train Loss: 0.1539 | Acc: 98.12%
+Val Loss: 0.0000 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 1.88%
+--------------------------------------------------
+
+Epoch 50/75
+Train Loss: 0.0755 | Acc: 97.50%
+Val Loss: 0.0000 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 2.50%
+--------------------------------------------------
+
+Epoch 51/75
+Train Loss: 0.1421 | Acc: 98.12%
+Val Loss: 0.0000 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 1.88%
+--------------------------------------------------
+
+Epoch 52/75
+Train Loss: 0.0732 | Acc: 98.75%
+Val Loss: 0.0000 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 1.25%
+--------------------------------------------------
+
+Epoch 53/75
+Train Loss: 0.1224 | Acc: 98.12%
+Val Loss: 0.0001 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 1.88%
+--------------------------------------------------
+
+Epoch 54/75
+Train Loss: 0.0026 | Acc: 100.00%
+Val Loss: 0.0000 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 0.00%
+✓ New best ensemble model! (Higher training accuracy)
+  Train: 100.00% | Val: 100.00% | Gap: 0.00%
+--------------------------------------------------
+
+Epoch 55/75
+Train Loss: 0.0174 | Acc: 99.38%
+Val Loss: 0.0000 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 0.62%
+--------------------------------------------------
+
+Epoch 56/75
+Train Loss: 0.2316 | Acc: 97.50%
+Val Loss: 0.0000 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 2.50%
+--------------------------------------------------
+
+Epoch 57/75
+Train Loss: 0.0744 | Acc: 98.12%
+Val Loss: 0.0000 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 1.88%
+--------------------------------------------------
+
+Epoch 58/75
+Train Loss: 0.0378 | Acc: 99.38%
+Val Loss: 0.0000 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 0.62%
+--------------------------------------------------
+
+Epoch 59/75
+Train Loss: 0.2534 | Acc: 95.62%
+Val Loss: 0.0000 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 4.37%
+--------------------------------------------------
+
+Epoch 60/75
+Train Loss: 0.2426 | Acc: 97.50%
+Val Loss: 0.0000 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 2.50%
+--------------------------------------------------
+
+Epoch 61/75
+Train Loss: 0.1611 | Acc: 97.50%
+Val Loss: 0.0001 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 2.50%
+--------------------------------------------------
+
+Epoch 62/75
+Train Loss: 0.1287 | Acc: 97.50%
+Val Loss: 0.3121 | Acc: 97.50% | F1: 0.975
+Accuracy Gap: 0.00%
+--------------------------------------------------
+
+Epoch 63/75
+Train Loss: 0.2039 | Acc: 96.88%
+Val Loss: 0.1751 | Acc: 97.50% | F1: 0.975
+Accuracy Gap: 0.62%
+--------------------------------------------------
+
+Epoch 64/75
+Train Loss: 0.0715 | Acc: 97.50%
+Val Loss: 0.0001 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 2.50%
+--------------------------------------------------
+
+Epoch 65/75
+Train Loss: 0.1660 | Acc: 97.50%
+Val Loss: 0.0000 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 2.50%
+--------------------------------------------------
+
+Epoch 66/75
+Train Loss: 0.1997 | Acc: 97.50%
+Val Loss: 0.4065 | Acc: 95.00% | F1: 0.947
+Accuracy Gap: 2.50%
+--------------------------------------------------
+
+Epoch 67/75
+Train Loss: 0.1348 | Acc: 97.50%
+Val Loss: 0.0004 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 2.50%
+--------------------------------------------------
+
+Epoch 68/75
+Train Loss: 0.1162 | Acc: 98.12%
+Val Loss: 0.0000 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 1.88%
+--------------------------------------------------
+
+Epoch 69/75
+Train Loss: 0.1934 | Acc: 98.12%
+Val Loss: 0.0000 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 1.88%
+--------------------------------------------------
+
+Epoch 70/75
+Train Loss: 0.1083 | Acc: 97.50%
+Val Loss: 0.0131 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 2.50%
+--------------------------------------------------
+
+Epoch 71/75
+Train Loss: 0.2710 | Acc: 97.50%
+Val Loss: 0.0013 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 2.50%
+--------------------------------------------------
+
+Epoch 72/75
+Train Loss: 0.2809 | Acc: 96.25%
+Val Loss: 0.6322 | Acc: 87.50% | F1: 0.868
+Accuracy Gap: 8.75%
+--------------------------------------------------
+
+Epoch 73/75
+Train Loss: 0.1874 | Acc: 95.00%
+Val Loss: 0.0455 | Acc: 95.00% | F1: 0.947
+Accuracy Gap: 0.00%
+--------------------------------------------------
+
+Epoch 74/75
+Train Loss: 0.2308 | Acc: 95.62%
+Val Loss: 0.2063 | Acc: 97.50% | F1: 0.975
+Accuracy Gap: 1.87%
+--------------------------------------------------
+
+Epoch 75/75
+Train Loss: 0.1296 | Acc: 98.75%
+Val Loss: 0.0001 | Acc: 100.00% | F1: 1.000
+Accuracy Gap: 1.25%
+--------------------------------------------------
+
+==================================================
+ENSEMBLE MODEL TRAINING COMPLETED!
+Best Model - Train Acc: 100.00% | Val Acc: 100.00% | Gap: 0.00% | F1: 1.000
+Training Time: 789.3 minutes
+✓ Model comparison plot saved to op/10c_AM//model_comparison.png
+
+============================================================
+FINAL MODEL COMPARISON
+============================================================
+Model           Train Acc    Val Acc    Gap      F1-Score   Time (min)  
+----------------------------------------------------------------------
+Improved        0.894        0.850      0.044    0.847      391.1       
+Advanced        0.994        1.000      0.006    1.000      392.3       
+Ensemble        1.000        1.000      0.000    1.000      789.3       
+
+✓ Model comparison plot saved to op/10c_AM//model_comparison.png

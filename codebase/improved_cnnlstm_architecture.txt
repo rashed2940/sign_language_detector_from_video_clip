@@ -1,0 +1,53 @@
+============================================================
+Improved_CNNLSTM Architecture
+============================================================
+
+AdaptiveImprovedCNNLSTM(
+  (feature_layers): Sequential(
+    (0): Linear(in_features=138, out_features=224, bias=True)
+    (1): BatchNorm1d(224, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.30000000000000004, inplace=False)
+    (4): Linear(in_features=224, out_features=168, bias=True)
+    (5): BatchNorm1d(168, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (6): ReLU()
+    (7): Dropout(p=0.375, inplace=False)
+    (8): Linear(in_features=168, out_features=112, bias=True)
+    (9): BatchNorm1d(112, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (10): ReLU()
+    (11): Dropout(p=0.22499999999999998, inplace=False)
+  )
+  (lstm): LSTM(112, 280, num_layers=2, batch_first=True, dropout=0.375)
+  (classifier): Sequential(
+    (0): Linear(in_features=280, out_features=168, bias=True)
+    (1): BatchNorm1d(168, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.44999999999999996, inplace=False)
+    (4): Linear(in_features=168, out_features=84, bias=True)
+    (5): ReLU()
+    (6): Dropout(p=0.375, inplace=False)
+    (7): Linear(in_features=84, out_features=10, bias=True)
+  )
+)
+
+
+============================================================
+Total Parameters: 1,222,182
+Trainable Parameters: 1,222,182
+Non-trainable Parameters: 0
+============================================================
+
+
+Layer-wise Parameter Count:
+----------------------------------------
+feature_layers.0: 31,136 parameters
+feature_layers.1: 448 parameters
+feature_layers.4: 37,800 parameters
+feature_layers.5: 336 parameters
+feature_layers.8: 18,928 parameters
+feature_layers.9: 224 parameters
+lstm: 1,070,720 parameters
+classifier.0: 47,208 parameters
+classifier.1: 336 parameters
+classifier.4: 14,196 parameters
+classifier.7: 850 parameters
