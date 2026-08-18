@@ -39,6 +39,14 @@ The model recognizes **10 sign language classes**:
 5. Mad         10. Hurry
 ```
 
+## Demo
+
+See the web app in action:
+
+![Sign Language Detection Demo](animation/demo.gif)
+
+The animation shows the full upload → inference → results workflow, including the top-5 prediction bar chart and full probability distribution rendered by [templates/index.html](templates/index.html).
+
 ## Prerequisites
 
 - **Python 3.8+**
@@ -87,6 +95,8 @@ Sign_language_detection/
 ├── 1_op_ds_model_v3a_10c_v3_l40_AM.py        # Training script (source of truth)
 ├── templates/
 │   └── index.html                            # Web UI template
+├── animation/                                # Demo assets for README
+│   └── demo.gif                              # Webapp walkthrough animation
 ├── uploads/                                  # User-uploaded videos (auto-created)
 ├── codebase/
 │   ├── improved_model_best.pth               # Improved model checkpoint
